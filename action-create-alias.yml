@@ -1,0 +1,14 @@
+actions:
+  1:
+    action: alias
+    description: "Add/Remove selected indices to or from the specified alias"
+    options:
+      name: alias1
+    add:
+      filters:
+      - filtertype: pattern
+        kind: regex
+        value: 'spike-prod4'
+    remove:
+      filters:
+      - filtertype: none

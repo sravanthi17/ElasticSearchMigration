@@ -1,0 +1,14 @@
+actions:
+  1:
+    description: "Reindex product_catalog into spike-prod4"
+    action: reindex
+    options:
+      wait_interval: 9
+      max_wait: -1
+      request_body:
+        source:
+          index: product_catalog
+        dest:
+          index: spike-prod4
+    filters:
+    - filtertype: none

@@ -1,0 +1,10 @@
+actions:
+  1:
+    action: create_index
+    description: Create the index as named, with the specified extra settings.
+    options:
+      name: spike-prod4
+      extra_settings:
+        settings:
+          number_of_shards: 2
+          number_of_replicas: 1
